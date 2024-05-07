@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Details page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content padding>
+  <ion-card>
+
+    <ion-img [src]="item.imageUrl" [style.width.px]="200" [style.height.px]="200"></ion-img>
+    
+    <ion-card-header>
+      <ion-card-title>{{ item?.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-subtitle>
+       Item ID: {{ item?.id }}
+    </ion-card-subtitle>
+    <ion-card-content>
+     <p>{{ item?.name }} is so beautiful </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
